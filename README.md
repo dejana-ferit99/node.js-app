@@ -1,38 +1,43 @@
-# LV 2 zadatak - JavaScript komandne aplikacije
+### LV 2 zadatak - JavaScript komandne aplikacije (JavaScript command line app)
 
-Zadatak je napraviti command line JavaScript aplikaciju koja će simulirati košaricu u web stranici za trgovinu. Sučelje, specifikaciju i rad aplikacije morate dizajnirati sami. Obratite pozornost na lakoću korištenja aplikacije. Npr. možda je lakše korisniku upisati “kupi patike” nego “kupi item-125sa4134d”, ili je možda dobra značajka imati mogućnost pretrage proizvoda. 
+## About the project
 
-Dizajn sučelja, sigurnost (provjera greški i sl.), lakoća korištenja (dizajn sučelja, korisne greške, postoji li “help” komanda i sl.) i potpunost rješenja će se bodovati.
+This project is made for 2nd laboratory exercises for Web programming course. 
+Used for building this project: Visual Studio Code and Node.js
 
-Minimalni zahtjevi su da korisnik može vidjeti popis svih artikala, vidjeti svoju košaricu, dodavati i brisati artikle iz košarice te kupiti sve odabrane proizvode (ako za to ima novaca). Svaku komandu/akciju je potrebno definirati u zasebnoj funkciji.
+## Getting started
 
-U **main.js** postoji kod kojeg možete koristiti kao početnu točku za razvoj aplikacije.
+# Prerequires
+To start up this programme locally, its necessary to install Visual Studio Code and Node.js.
 
-Nakon što je aplikacija izrađena, potrebno je napisati dokumentaciju (uređivanjem ovog README dokumenta) koja opisuje sve moguće komande, njihove argumente i što obavljaju ili vračaju. Npr.
+Link to Visual Studio: https://code.visualstudio.com/download
 
-> buy 
-> > Add an item with the specified name to the cart. Will search list of items (case insensitive) by the name. If no matching item is found, returns an error. 
+![alt text](https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_vscode_icon_130084.png)
 
-Osim toga, potrebno je opisati općeniti dizajn komandne aplikacije, na što ste obraćali pozornost te generalne upute kako koristiti aplikaciju. Zamislite da pišete README za javni GitHub repozitorij vaše aplikacije.
+Link for Node.js: https://nodejs.org/en/download
 
-## Pokretanje JavaScript komandnih aplikacija
+![alt text](https://www.svgrepo.com/show/354118/nodejs.svg)
 
-Potrebno je instalirati Node: [https://nodejs.dev/en/](https://nodejs.dev/en/)
+To run this application, in terminal of Visual Studio command run this command, where path is location of this file:
+```bash
+cd path
+```
 
-Nakon instalacije, moguće je pokretati JavaScript datoteke iz terminala:
-
-```shell
+# How to start application
+After that, start noode.js file:
+```bash
 node main.js
 ```
 
-## Resursi
+## Short description of app functionalities
 
-Ideje o tome kako dizajnirati komandno sučelje
+Firstly, user is informed with word "Store", and amount of money that the owner can use for shopping in store. That means the app is running. 
+After that, user is asked if he wants to see items avaliable for sale. There are two possible answers: yes-it leads to list of avaliable items in store, no-user is asked if he needs help, if the answer is yes, cheatsheet of commands will me displayed, if no, app will be closed.
+When items in the store are displayed, user can add them in cart with command buy <item>. Next, user is asked if he wants to keep hopping or go to checkout. Here youser can keep shopping and add more item to the cart, or he can remove some of the items from the cart with command remove <item>.  When users decides to go to checkout, items in cart will be displayed and total sum. If total sum is bigger than amount of money in wallet, user will have to remove some of items. In the end, user is asked if he is done with shopping. If he is, he will type yes and if no, he will bew redirected to list of items for sale.
 
-- [https://clig.dev/#guidelines](https://clig.dev/#guidelines)
-- [https://www.makeareadme.com](https://www.makeareadme.com/)
-
-JavaScript osnove:
-
-- [https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics)
-- [https://javascript.info/first-steps](https://javascript.info/first-steps)
+Most important commands are: buy (item), remove (item), help, cart. 
+  
+ At any time can user type in command help and some of the most immportant commands will me displayed with their explanation. 
+ 
+  ## Author
+[@dejana-ferit99](https://github.com/dejana-ferit99)
